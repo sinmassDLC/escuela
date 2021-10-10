@@ -1,0 +1,235 @@
+:root {
+    --gradient-color-nav: 
+    -webkit-linear-gradient(to top, #0426A6, #047CA6 )
+    linear-gradient(top, #0426A6, #047CA6);
+    --blue: #0426A6;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.menu {    
+    background: #834d9b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #834d9b, #d04ed6); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #834d9b, #d04ed6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.menu ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu ul li {
+    background-color: transparent;
+}
+.menu ul li a {
+    color: #f3f3f3;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding: 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.menu ul li {
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 10px;
+}
+/* .menu ul li:hover {
+    
+} */
+.menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+}
+.menu ul ul li {
+    float: none;
+    /* width: 150px; */
+}
+.menu ul ul a{
+    line-height: 120%;
+    padding: 10px 15px;
+    background: #834d9b; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #834d9b, #d04ed6); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #834d9b, #d04ed6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 5px;
+}
+
+.menu ul ul a #book {
+    height: 200px;
+
+}
+
+.menu ul ul a #platform {
+    height: 32px;
+    background: #834d9b; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #834d9b, #d04ed6); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #834d9b, #d04ed6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 5px;
+}
+
+
+.menu ul li:hover > ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu ul li > ul li a:hover {
+    
+    color: #444444;
+}
+
+.ion-md-arrow {
+    background-color: tomato;
+    
+}
+
+
+.release {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.release h3 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.release img {
+    border: 1px solid #4E4C4C;
+    margin: 1rem;
+    height: 100px;
+}
+
+.star {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.star li {
+    margin: 0px 9px;
+}
+
+.star li a {
+    color: #f2f2f2;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+main {
+    background: #2980b9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0;
+    padding: 0;
+    
+}
+
+main h1 {
+    color: #f3f3f3;
+    font: 5rem;
+}
+
+main h2 {
+    color: #44ff33;
+    font-size: 2rem;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.container-slider {
+    display: block;
+}
+
+.container-slider--2 {
+    display: flex;
+}
+
+.slider-album::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+.slider-album::-webkit-scrollbar-track {
+    background: #f3f3f3;
+    border-radius: 30px;
+}
+
+.slider-album::-webkit-scrollbar-track:hover {
+    background: #000fff;
+}
+
+.slider-album::-webkit-scrollbar-thumb {
+    background: #000fff;
+    border-radius: 30px;
+}
+
+.slider-album::-webkit-scrollbar-thumb:hover {
+    background: #f3f3f3;
+}
+
+.slider-album {
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    width: 98vw;
+    height: 24vw;
+    margin: 10px;
+}
+
+.album {
+    height: 300px;
+    width: 300px;
+}
+
+a > img {
+    border-radius: 30px;
+    height: 250px;
+    padding: 20px;
+    transition: all linear 200ms;
+}
+
+.slider-album img:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+#cover {
+    height: 250px;
+    
+}
+
+.album a {
+    color: #f3f3f3;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 0 20px 0;
+}
+
+.album h3 {
+    color: #f3f3f3;
+    font-size: 1.9rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 0 0 0;
+}
+
+section {
+    display: flex;
+}
+
